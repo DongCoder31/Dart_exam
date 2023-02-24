@@ -123,14 +123,15 @@ class managerHuman{
     showTeacher;
   }
   void seachNameAndId(String index)  {
-    var arr = [];
+    Lisr<Human> arrTmp = [];
     for (Human d in list1) {
       if (d.name.toLowerCase().contains(index.toLowerCase()) || d.id == index )
       {
-       arr.add(d);
+       arrTmp.add(d);
       }
     }
-    arr.forEach(print);
+    arrTmp.forEach(print);
+    arrTmp.clear();
   }
   void getSumSalary(){
     double salary = 0;
