@@ -9,7 +9,7 @@ void main(){
   final managerHuman mn = managerHuman.name1(listdoc);
 
   int i = 0;
-  String? index = "";
+  String index = "";
 
   mn.inputData();
 
